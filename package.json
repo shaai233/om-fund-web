@@ -1,0 +1,29 @@
+{
+  "name": "om-fund-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "lucide-vue-next": "^0.577.0",
+    "vue": "^3.5.42",
+    "vue-router": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "less": "^4.9.0",
+    "typescript": "~6.0.3",
+    "vercel": "^59.16.0",
+    "vite": "^8.2.2",
+    "vite-plugin-pwa": "^1.3.0",
+    "vitest": "^4.1.11",
+    "vue-tsc": "^3.3.11"
+  }
+}

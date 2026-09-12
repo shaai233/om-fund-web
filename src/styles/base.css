@@ -1,0 +1,62 @@
+:root {
+  --color-primary: #2878d0;
+  --color-primary-light: #edf5ff;
+  --color-text: #202124;
+  --color-text-secondary: #72767d;
+  --color-text-tertiary: #9a9da3;
+  --color-border: #eceef1;
+  --color-surface: #fff;
+  --color-background: #f4f5f7;
+  --color-up: #e14b52;
+  --color-down: #22a06b;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  touch-action: manipulation;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-background);
+}
+
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[role='button'] {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+@media (max-width: 719px) {
+  input,
+  select {
+    font-size: 16px !important;
+  }
+}
