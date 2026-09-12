@@ -48,6 +48,21 @@ npx vercel --prod
 
 部署完成后建议验证首页、任意基金详情页，以及 `/api/search?q=000751` 接口。
 
+## Netlify 部署
+
+项目同时提供了 Netlify Functions 入口。将仓库导入 Netlify 后，构建设置使用：
+
+- Build command：`npm run build`
+- Publish directory：`dist`
+- Functions directory：`netlify/functions`
+
+根目录的 `netlify.toml` 已配置 `/api/*` 到 Netlify Function 的重写，以及前端路由回退。部署完成后可验证：
+
+```text
+https://你的站点.netlify.app/api/search?q=000751
+https://你的站点.netlify.app/api/quotes?codes=000001%2C399001%2C399006
+```
+
 ## 数据说明
 
 行情数据来自公开市场信息，可能存在延迟，仅供参考，不构成投资建议。第三方接口并非正式开放契约，上线后需持续关注字段变化和限流情况。
