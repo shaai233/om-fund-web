@@ -31,17 +31,25 @@ body,
 
 html {
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-x: none;
 }
 
 body {
   min-width: 320px;
   min-height: 100vh;
   background: var(--color-background);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 input,
-select {
+select,
+textarea {
   font: inherit;
+  -webkit-user-select: text;
+  user-select: text;
 }
 
 a {
